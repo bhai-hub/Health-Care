@@ -6,13 +6,25 @@ const CenterSchema = new mongoose.Schema({
         required: true,
         trim: true, // Trim whitespace from name
     },
-    Address: { // address of the wellness center
+    address: { // address of the wellness center
         type: String,
         required: true,
         trim: true, // Trim whitespace from address
     },
+    phoneNumber:{
+        type: String,
+        required: true,
+    },
+    email:{
+        type: String,
+        required: true,
+    },
     pincode: { // pincode of wellness
         type: Number,
+        required: true,
+    },
+    password:{
+        type: String,
         required: true,
     },
     city: { // city of the wellness center
@@ -45,6 +57,10 @@ const CenterSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true, // Trim whitespace from CID
+    },
+    isVerified:{
+        type: Boolean,
+        default: false
     }
 });
 

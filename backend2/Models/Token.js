@@ -9,6 +9,10 @@ const TokenSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    otp:{
+        type: Number,
+        required: true
+    },
     createdAt: {
         type: Date,
         default: Date.now, // Automatically set the current date when the token is created

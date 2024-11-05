@@ -5,11 +5,12 @@ const ReportSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    center:{ // wellness center name 
+    CID:{ // wellness center name 
         type:String,
         required:true
+        
     },
-    doctor:{ //doctor ID
+    DID:{ //doctor ID
         type:String,
         required:true,
     },

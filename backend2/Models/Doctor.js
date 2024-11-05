@@ -23,10 +23,8 @@ const DoctorSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        minlength: 8, // Minimum length of 8 characters
-        maxlength: 20, // Maximum length of 20 characters
     },
-    Email: { // official email
+    email: { // official email
         type: String,
         required: true,
         trim: true, // Trim whitespace from email
